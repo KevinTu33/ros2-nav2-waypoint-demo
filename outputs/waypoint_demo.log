@@ -1,0 +1,37 @@
+Starting >>> nav2_waypoint_demo
+Finished <<< nav2_waypoint_demo [0.68s]
+
+Summary: 1 package finished [0.75s]
+[INFO] [1791170666.318450086] [waypoint_demo]: Waiting for Nav2 to become active...
+[INFO] [1791170667.321534961] [waypoint_demo]: amcl/get_state service not available, waiting...
+[INFO] [1791170668.324951045] [waypoint_demo]: amcl/get_state service not available, waiting...
+[INFO] [1791170672.828418506] [waypoint_demo]: Nav2 is ready for use!
+[INFO] [1791170672.829088464] [waypoint_demo]: Waypoint 1: top corridor (x=0.0, y=2.0, yaw=0 deg)
+[INFO] [1791170672.829466464] [waypoint_demo]: Waypoint 2: right corridor (x=2.0, y=0.5, yaw=-90 deg)
+[INFO] [1791170672.829746797] [waypoint_demo]: Waypoint 3: right lower corridor (x=2.0, y=-0.5, yaw=180 deg)
+[INFO] [1791170672.830013964] [waypoint_demo]: Sending waypoint 1/3: top corridor
+[INFO] [1791170672.830403964] [waypoint_demo]: Navigating to goal: 0.0 2.0...
+[INFO] [1791170672.931931797] [waypoint_demo]: Waypoint 1/3 feedback: 3.59 m remaining, 0 recoveries
+[INFO] [1791170674.941873298] [waypoint_demo]: Waypoint 1/3 feedback: 3.59 m remaining, 0 recoveries
+[INFO] [1791170676.954654549] [waypoint_demo]: Waypoint 1/3 feedback: 3.25 m remaining, 0 recoveries
+[INFO] [1791170678.961585009] [waypoint_demo]: Waypoint 1/3 feedback: 2.45 m remaining, 0 recoveries
+[INFO] [1791170680.969458593] [waypoint_demo]: Waypoint 1/3 feedback: 1.67 m remaining, 0 recoveries
+[INFO] [1791170682.975296802] [waypoint_demo]: Waypoint 1/3 feedback: 0.80 m remaining, 0 recoveries
+[INFO] [1791170684.982500886] [waypoint_demo]: Waypoint 1/3 feedback: 0.10 m remaining, 0 recoveries
+[INFO] [1791170686.988848179] [waypoint_demo]: Waypoint 1/3 feedback: 0.07 m remaining, 0 recoveries
+[INFO] [1791170687.582539304] [waypoint_demo]: WAYPOINT_1_SUCCEEDED: top corridor
+[INFO] [1791170687.583099929] [waypoint_demo]: Sending waypoint 2/3: right corridor
+[INFO] [1791170687.583493679] [waypoint_demo]: Navigating to goal: 2.0 0.5...
+[INFO] [1791170687.684885388] [waypoint_demo]: Waypoint 2/3 feedback: 2.70 m remaining, 0 recoveries
+[INFO] [1791170689.692643389] [waypoint_demo]: Waypoint 2/3 feedback: 2.32 m remaining, 0 recoveries
+[INFO] [1791170691.699179250] [waypoint_demo]: Waypoint 2/3 feedback: 1.60 m remaining, 0 recoveries
+[INFO] [1791170693.707987501] [waypoint_demo]: Waypoint 2/3 feedback: 0.72 m remaining, 0 recoveries
+[INFO] [1791170695.135010835] [waypoint_demo]: WAYPOINT_2_SUCCEEDED: right corridor
+[INFO] [1791170695.135316419] [waypoint_demo]: Sending waypoint 3/3: right lower corridor
+[INFO] [1791170695.135742877] [waypoint_demo]: Navigating to goal: 2.0 -0.5...
+[INFO] [1791170695.237109335] [waypoint_demo]: Waypoint 3/3 feedback: 1.27 m remaining, 0 recoveries
+[INFO] [1791170697.244425253] [waypoint_demo]: Waypoint 3/3 feedback: 0.84 m remaining, 0 recoveries
+[INFO] [1791170699.253990171] [waypoint_demo]: Waypoint 3/3 feedback: 0.27 m remaining, 0 recoveries
+[INFO] [1791170701.262135130] [waypoint_demo]: Waypoint 3/3 feedback: 0.27 m remaining, 0 recoveries
+[INFO] [1791170701.487089630] [waypoint_demo]: WAYPOINT_3_SUCCEEDED: right lower corridor
+[INFO] [1791170701.487451130] [waypoint_demo]: WAYPOINT_DEMO_SUCCEEDED

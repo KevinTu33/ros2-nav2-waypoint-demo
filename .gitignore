@@ -1,0 +1,9 @@
+build/
+install/
+log/
+__pycache__/
+*.pyc
+.DS_Store
+outputs/FOLLOW_UP_EMAIL.md
+outputs/NAV2_SETUP.md
+work/

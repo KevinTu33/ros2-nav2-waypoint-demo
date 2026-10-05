@@ -1,0 +1,34 @@
+services:
+  nav2:
+    image: local/nav2-jazzy-arm64:1.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/arm64
+    stdin_open: true
+    tty: true
+    environment:
+      ROS_DOMAIN_ID: "42"
+      RMW_IMPLEMENTATION: rmw_fastrtps_cpp
+    volumes:
+      - .:/workspace
+    shm_size: 1gb
+
+  sim:
+    image: local/nav2-jazzy-arm64:1.0
+    platform: linux/arm64
+    environment:
+      ROS_DOMAIN_ID: "42"
+      RMW_IMPLEMENTATION: rmw_fastrtps_cpp
+    volumes:
+      - .:/workspace
+    shm_size: 1gb
+    ports:
+      - "127.0.0.1:6080:6080"
+    command:
+      - bash
+      - -lc
+      - >-
+        source /opt/ros/jazzy/setup.bash &&
+        exec ros2 launch nav2_bringup tb3_simulation_launch.py
+        headless:=True use_rviz:=False
